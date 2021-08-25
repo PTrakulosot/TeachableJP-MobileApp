@@ -1,0 +1,196 @@
+.swiper-slide {
+  display: block;
+}
+
+.swiper-slide img {
+  margin-top: 10px;
+  pointer-events: none;
+}
+
+b {
+  font-weight: 500;
+}
+
+p {
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ion-color-step-600, #60646b);
+}
+
+p b {
+  color: var(--ion-text-color, #000000);
+}
+
+ion-toolbar {
+    height: 50px;
+    --background: white;
+}
+
+ion-content{
+    --background: #0990ff88;
+}
+
+ion-card {
+    height: 180px;
+}
+
+.card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+  
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 1.5em;
+      width: 100%;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+    }
+  
+    .card-subtitle { 
+      font-size: 120%;
+      position: absolute;
+      top: 80%;
+      width: 100%;
+      color: rgb(40, 40, 40);
+      font-weight: bold;
+    }
+}
+
+#faq{
+  ul{
+      padding: 0;
+      li{
+          position: relative;
+          overflow: hidden;
+          padding: 0;
+          margin: 0;
+          background: #0990ff88;
+          box-shadow:0 3px 10px -2px rgb(0, 0,0,0.01);
+          border-radius: 10px;
+          +{
+              li{
+                  margin-top: 15px;
+              }
+          }
+          i{
+              position: absolute;
+              transform: translate(-6px);
+              margin-top: 28px;
+              right: 15px;
+              &:before{
+                  content: "";
+                  position: absolute;
+                  transition: all 0.3s;
+                  background-color: rgb(0, 0, 0);
+                  width: 3px;
+                  height: 9px;
+                  transform: translate(-2px,0) rotate(45deg);
+                  
+              }
+              &:after{
+                  transform: translate(2px,0) rotate(-45deg);
+                  transition: all 0.3s;
+                  content: "";
+                  position: absolute;
+                  background-color: rgb(0, 0, 0);
+                  width: 3px;
+                  height: 9px;  
+              }
+          }
+          input[type="checkbox"]{
+              position: absolute;
+              cursor: pointer;
+              width: 100%;
+              height: 100%;
+              z-index: 1;
+              opacity: 0;
+              touch-action: manipulation;
+              &:checked{
+                  ~ {
+                      h2{
+                      color:#fff;
+                      }
+                      p{
+                          max-height: 0;
+                          transition: 0.3s;
+                          opacity: 0;
+                      }
+                      i{
+                          &::before{
+                              transform: translate(-2px,0) rotate(45deg);
+                          }
+                          &::after{
+                              transform: translate(2px,0) rotate(-45deg);
+                          }
+                      }
+
+                  }
+              }
+          }
+      }
+      .no-select{
+          user-select: none;
+      }
+      h2{
+          color:black;
+          font-size: 24px;
+          line-height: 34px;
+          text-align: left;
+          padding: 15px 15px 0;
+          text-transform: none;
+          font-weight: 300;
+          letter-spacing: 1px;
+          display: block;
+          margin: 0;
+          cursor: pointer;
+          transition: 0.2s;
+          
+      }
+      p{
+          color: rgb(70, 70, 70);
+          text-align: left;
+          font-size: 15px;
+          line-height: 1.45;
+          position: relative;
+          overflow: hidden;
+          max-height:1000px;
+          
+          will-change: max-height;
+          
+          contain: layout;
+          display: inline-block;
+          opacity:1;
+          transform:translate(0,0);
+          margin-top: 5px;
+          margin-bottom: 15px;
+          // margin-left: 25px;
+          padding: 0 50px 0 15px;
+          transition: 0.3s opacity, 0.6s max-height;
+          background-color: rgb(255, 255, 255);
+
+
+      }
+  }
+}
+
+ion-content {
+  --background: url('/assets/BG/JP3.jpg') no-repeat center 100%;
+}
+* {
+    font-family: "Itim", cursive;
+    font-family: "Sriracha", cursive;
+  }
+  .toolbar{
+    background: -webkit-linear-gradient(left, #5298ad,#d6eff5);
+
+}
+.Kirby{
+    width: 40%;
+    margin-left: 250px;
+}
+  

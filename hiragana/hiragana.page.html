@@ -1,0 +1,188 @@
+<ion-header>
+  <ion-toolbar color="primary" translucent="true">
+    <ion-buttons style="color: rgb(223, 98, 202)" slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title  style="color: rgb(255, 255, 255)"  class="toolbar"
+      >Hiragana</ion-title
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let image of [1, 2, 3, 4, 5]">
+        <div class="img-wrapper">
+          <div class="card">
+            <img
+              src="../assets/hiragana/{{image}}.png"
+              button
+              (click)="openPopupModal(image)"
+            />
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col *ngFor="let image of [6, 7, 8, 9, 10]">
+        <div class="img-wrapper">
+          <div class="card">
+            <img
+              src="../assets/hiragana/{{image}}.png"
+              button
+              (click)="openPopupModal(image)"
+            />
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col *ngFor="let image of [11, 12, 13, 14, 15]">
+        <div class="img-wrapper">
+          <div class="card">
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            button
+            (click)="openPopupModal(image)"
+          />
+        </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col *ngFor="let image of [16, 17, 18, 19, 20]">
+        <div class="img-wrapper">
+          <div class="card">
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            button
+            (click)="openPopupModal(image)"
+          />
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col *ngFor="let image of [21, 22, 23, 24, 25]">
+        <div class="img-wrapper">
+          <div class="card">
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            button
+            (click)="openPopupModal(image)"
+          />
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col *ngFor="let image of [26, 27, 28, 29, 30]">
+        <div class="img-wrapper">
+          <div class="card">
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            button
+            (click)="openPopupModal(image)"
+          />
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col *ngFor="let image of [31, 32, 33, 34, 35]">
+        <div class="img-wrapper">
+          <div class="card">
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            button
+            (click)="openPopupModal(image)"
+          />
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2.4" *ngFor="let image of [41, 42, 43]">
+        <div class="img-wrapper">
+          
+          
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            *ngIf="image == 41"
+            button
+            (click)="openPopupModal(image)"
+            style="border: 2px solid #d5ffe2; background-color: rgb(255, 254, 250);
+            box-shadow: 2px 2.2px 2px #888888; border-radius: 10px;"
+          />
+          
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            *ngIf="image == 42"
+            button
+            (click)="openPopupModal(image)"
+            style="border: 2px solid #d5ffe2; background-color: rgb(255, 254, 250);
+            box-shadow: 2px 2.2px 2px #888888; border-radius: 10px;margin-left: 80px;"
+          />
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            *ngIf="image == 43"
+            button
+            (click)="openPopupModal(image)"
+            style="border: 2px solid #d5ffe2; background-color: rgb(255, 254, 250);
+            box-shadow: 2px 2.2px 2px #888888; border-radius: 10px;margin-left: 160px;"
+          />
+          </div>
+        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col *ngFor="let image of [36, 37, 38, 39, 40]">
+        <div class="card">
+        <div class="img-wrapper">
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            button
+            (click)="openPopupModal(image)"
+          />
+        </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2.4" *ngFor="let image of [44, 45, 46]">
+        
+        <div class="img-wrapper">
+       
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            *ngIf="image == 44"
+            button
+            (click)="openPopupModal(image)"
+            style="border: 2px solid #d5ffe2; background-color: rgb(255, 254, 250);
+            box-shadow: 2px 2.2px 2px #888888; border-radius: 10px;"
+          />
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            *ngIf="image == 46"
+            button
+            (click)="openPopupModal(image)"
+            style="border: 2px solid #d5ffe2; background-color: rgb(255, 254, 250);
+            box-shadow: 2px 2.2px 2px #888888; border-radius: 10px;"
+          />
+          <img
+            src="../assets/hiragana/{{image}}.png"
+            *ngIf="image == 45"
+            button
+            (click)="openPopupModal(image)"
+            style="border: 2px solid #d5ffe2; background-color: rgb(255, 254, 250);
+            box-shadow: 2px 2.2px 2px #888888; border-radius: 10px;margin-left: 240px;"
+            
+            
+          />
+        </div>
+      
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

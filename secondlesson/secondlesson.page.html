@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button style="color: rgb(37, 77, 116);" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color: rgb(255, 255, 255);" class="toolbar" >Lesson 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <center>
+    <h1><strong>ASKING FOR SHOPPING</strong></h1>
+    <img src="../assets/ndlesson.jpg" style="margin-bottom: 10px;" >
+    <div class="wrapper" style="margin-top: 10px;">
+      <ion-avatar slot="start">
+        <img src="../assets/avatar_tam.png">
+      </ion-avatar>
+      <ion-item lines=none>
+        <ion-label>
+          <ion-label class="JP">すみません.</ion-label>
+          <ion-label class="RO">Sumimasen.</ion-label>
+          <ion-label class="TH">ขออนุณาตนะคะ</ion-label>
+        </ion-label>
+        <ion-fab-button translucent="true" color="warning" (click)="playAudio(1)" slot="end">
+          <ion-icon name="volume-high-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-item>
+    </div>
+    <div class="wrapper" style="margin-top: 10px;">
+      <ion-avatar slot="start">
+        <img src="../assets/avatar_tam.png">
+      </ion-avatar>
+      <ion-item lines=none>
+        <ion-label>
+          <ion-label class="JP">このドライヤーはいくらですか.</ion-label>
+          <ion-label class="RO">Kono doraiyaa wa ikura desu ka.</ion-label>
+          <ion-label class="TH">ไดร์เป่าผมอันนี้ราคาเท่าไรคะ ?</ion-label>
+        </ion-label>
+        <ion-fab-button translucent="true" color="warning" (click)="playAudio(2)" slot="end">
+          <ion-icon name="volume-high-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-item>
+    </div>
+    <div class="wrapper" style="margin-top: 10px;">
+      <ion-avatar slot="start">
+        <img src="../assets/avatar_clerk.png">
+      </ion-avatar>
+      <ion-item lines=none>
+        <ion-label>
+          <ion-label class="JP">9,900円です.</ion-label>
+          <ion-label class="RO">Kyuu-sen-kyuu-hyaku-en desu.</ion-label>
+          <ion-label class="TH">ราคา 9,900 เยน ครับ</ion-label>
+        </ion-label>
+        <ion-fab-button translucent="true" color="warning" (click)="playAudio(3)" slot="end">
+          <ion-icon name="volume-high-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-item>
+    </div>
+    <div class="wrapper" style="margin-top: 10px; margin-bottom: 10px;">
+      <ion-avatar slot="start">
+        <img src="../assets/avatar_tam.png">
+      </ion-avatar>
+      <ion-item lines=none>
+        <ion-label>
+          <ion-label class="JP">え! 高すぎる</ion-label>
+          <ion-label class="RO">Eh! Takasugimasu.</ion-label>
+          <ion-label class="TH">เอ๊ะ! นั่นเป็นราคาที่แพงเกินสำหรับฉันน่ะ</ion-label>
+        </ion-label>
+        <ion-fab-button translucent="true" color="warning" (click)="playAudio(4)" slot="end">
+          <ion-icon name="volume-high-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-item>
+    </div>
+  </center>
+</ion-content>

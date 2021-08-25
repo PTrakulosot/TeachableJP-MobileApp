@@ -1,0 +1,39 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModalPage()" color="danger">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <ion-buttons>
+    <ion-button (click)="closeModalPage()" color="danger" style="margin-left: 87%;">Close</ion-button>
+  </ion-buttons>
+  <ion-item>
+    <ion-label position="stacked">Vocab</ion-label>
+    <ion-input [(ngModel)]="newItem.vocab"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Spelling</ion-label>
+    <ion-input [(ngModel)]="newItem.spell"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Type</ion-label>
+    <ion-select [(ngModel)]="newItem.type" placeholder="Select Type">
+      <ion-select-option value="N.">noun</ion-select-option>
+      <ion-select-option value="PRON.">pronoun</ion-select-option>
+      <ion-select-option value="V.">verb</ion-select-option>
+      <ion-select-option value="ADJ.">adjective</ion-select-option>
+      <ion-select-option value="ADV.">adverb</ion-select-option>
+      <ion-select-option value="PREP.">preposition</ion-select-option>
+      <ion-select-option value="CONJ.">conjunction</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Meaning</ion-label>
+    <ion-input [(ngModel)]="newItem.meaning"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="addItem()">ADD</ion-button>
+
+</ion-content>

@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons style="color: rgb(37, 77, 116);" slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="color: rgb(255, 255, 255);" class="toolbar">Lesson 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <center>
+    <h1><strong>INTRODUCING YOURSELF</strong></h1>
+    <img src="../assets/stlesson.jpg" style="margin-bottom: 10px;" >
+    <div class="wrapper" style="margin-top: 10px;">
+      <ion-avatar slot="start">
+        <img src="../assets/avatar_miya.png">
+      </ion-avatar>
+      <ion-item lines=none>
+        <ion-label>
+          <ion-label class="JP">ただいま</ion-label>
+          <ion-label class="RO">Tadaima</ion-label>
+          <ion-label class="TH">กลับมาแล้วค่ะ</ion-label>
+        </ion-label>
+        <ion-fab-button translucent="true" color="warning" (click)="playAudio(1)" slot="end">
+          <ion-icon name="volume-high-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-item>
+    </div>
+    <div class="wrapper" style="margin-top: 10px;">
+      <ion-avatar slot="start">
+        <img src="../assets/avatar_kaito.png">
+      </ion-avatar>
+      <ion-item lines=none>
+        <ion-label>
+          <ion-label class="JP">はるさん, 新しい住人が</ion-label>
+          <ion-label class="JP">着ましたよ</ion-label>
+          <ion-label class="RO">Haru-san, atarashii juunin ga</ion-label>
+          <ion-label class="RO">tsukimashita yo.</ion-label>
+          <ion-label class="TH">คุณฮารุ, คนที่ย้ายเข้ามาใหม่มาแล้วครับ</ion-label>
+        </ion-label>
+        <ion-fab-button translucent="true" color="warning" (click)="playAudio(2)" slot="end">
+          <ion-icon name="volume-high-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-item>
+    </div>
+    <div class="wrapper" style="margin-top: 10px;">
+      <ion-avatar slot="start">
+        <img src="../assets/avatar_haru.png">
+      </ion-avatar>
+      <ion-item lines=none>
+        <ion-label>
+          <ion-label class="JP">ようこそいらっしゃいました</ion-label>
+          <ion-label class="RO">Yookoso irasshaimashita.</ion-label>
+          <ion-label class="TH">ยินดีต้อนรับจ้า</ion-label>
+        </ion-label>
+        <ion-fab-button translucent="true" color="warning" (click)="playAudio(3)" slot="end">
+          <ion-icon name="volume-high-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-item>
+    </div>
+    <div class="wrapper" style="margin-top: 10px;">
+      <ion-avatar slot="start">
+        <img src="../assets/avatar_tam.png">
+      </ion-avatar>
+      <ion-item lines=none>
+        <ion-label>
+          <ion-label class="JP">はじめまして</ion-label>
+          <ion-label class="RO">Hajimemashite.</ion-label>
+          <ion-label class="TH">สวัสดีค่ะ</ion-label>
+        </ion-label>
+        <ion-fab-button translucent="true" color="warning" (click)="playAudio(4)" slot="end">
+          <ion-icon name="volume-high-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-item>
+    </div>
+    <div class="wrapper" style="margin-top: 10px;">
+      <ion-avatar slot="start">
+        <img src="../assets/avatar_tam.png">
+      </ion-avatar>
+      <ion-item lines=none>
+        <ion-label>
+          <ion-label class="JP">タムです. 学生です.</ion-label>
+          <ion-label class="RO">Tamu desu. Gakusee desu.</ion-label>
+          <ion-label class="TH">ชื่อ ทาม เป็นนักเรียนค่ะ</ion-label>
+        </ion-label>
+        <ion-fab-button translucent="true" color="warning" (click)="playAudio(5)" slot="end">
+          <ion-icon name="volume-high-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-item>
+    </div>
+    <div class="wrapper" style="margin-top: 10px; margin-bottom: 10px;">
+      <ion-avatar slot="start">
+        <img src="../assets/avatar_tam.png">
+      </ion-avatar>
+      <ion-item lines=none>
+        <ion-label>
+          <ion-label class="JP">よろしくお願いします</ion-label>
+          <ion-label class="RO">Yoroshiku onegai-shimasu.</ion-label>
+          <ion-label class="TH">ยินดีที่ได้รู้จักค่ะ</ion-label>
+        </ion-label>
+        <ion-fab-button translucent="true" color="warning" (click)="playAudio(6)" slot="end">
+          <ion-icon name="volume-high-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-item>
+    </div>
+  </center>
+</ion-content>

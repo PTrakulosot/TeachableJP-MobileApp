@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModalPage()" color="dark">Close</ion-button>
+    </ion-buttons>
+    <ion-title  style="color: aliceblue;" class="toolbar">Modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="background-color: whitesmoke;">
+    <img src="../assets/hiragana_write/{{letterValue}}.png" style="margin-bottom: 50px;" *ngIf="pageValue == 1">
+    <img src="../assets/katakana_write/{{letterValue}}.png" style="margin-bottom: 50px;" *ngIf="pageValue == 2">
+    <center>
+      <ion-fab-button translucent="true" color="warning" (click)="playAudio(letterValue)" style="margin-bottom: 50px;">
+        <ion-icon name="volume-high-outline"></ion-icon>
+      </ion-fab-button>
+    </center>
+  </ion-card>
+</ion-content>

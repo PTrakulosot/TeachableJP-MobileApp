@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="toolbar" >
+      VOCABULARY
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-searchbar></ion-searchbar> -->
+
+  <ion-row class="align-items-center" *ngFor="let record of allRecord; let i = index">
+
+    <ion-item lines="none">
+      <ion-col size="2">
+        <ion-note style="padding-left: 3px">{{record.vocab}}</ion-note>
+      </ion-col>
+      <ion-col size="3">
+        <ion-note style="padding-left: 4px">{{record.spell}}</ion-note>
+      </ion-col>
+      <ion-col size="4">
+        <ion-note style="padding-left: 5px">{{record.type}}</ion-note>
+      </ion-col>
+      <ion-col size="3">
+        <ion-note style="padding-left: 5px">{{record.meaning}}</ion-note>
+      </ion-col>
+    </ion-item>
+
+  </ion-row>
+  
+</ion-content>

@@ -1,0 +1,28 @@
+ion-card{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 360px;
+    background-color: rgb(255, 255, 255);
+}
+ion-content {
+    --background: url('/assets/BG/JP3.jpg') no-repeat 100% 100%;
+    
+}
+.yt{
+    border-radius: 5px;
+}
+.toolbar{
+    background: -webkit-linear-gradient(left,#d6eff5, #5298ad,#d6eff5);
+
+}
+* {
+    font-family: 'Mali', cursive;
+}
+.h{
+    text-align: center;
+    font-weight: bold;
+}
+ion-title{
+    font-size: 25px;
+}

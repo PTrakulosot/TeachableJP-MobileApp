@@ -1,0 +1,251 @@
+<!-- <ion-menu side="start" menuId="first" contentId="main"> -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img
+        src="../assets/title.png"
+        alt="TEACHABLEJapan"
+        style="padding-top: 10px"
+      />
+      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="card-background-page">
+  <!-- <ion-list>
+    <ion-item>Admin</ion-item>
+  </ion-list> -->
+
+  
+
+  <!-- <ion-slides class="slides" [options]="slideOpts">
+    <ion-slide>
+      <ion-card style="height: max-content;">
+        <img src="../assets/hiragana-icon.png">
+        <p class="title">Education is the most powerful weapon which you can use to change the world</p>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card style="height: max-content;">
+        <img src="../assets/katakana-icon.png">
+        <p class="title">Education is not the filling of a pail but the lighting of a fire</p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides> -->
+  
+  <ion-slides>
+    <ion-slide>
+      <center>
+        <ion-grid>
+          <ion-row class="ion-align-items-center">
+            <ion-col size="6">
+              <ion-card button (click)="gotoPage(1)">
+                <img src="../assets/hiragana-icon.png" />
+                <div class="card-subtitle">Hiragana</div>
+              </ion-card>
+            </ion-col>
+            <ion-col size="6">
+              <ion-card button (click)="gotoPage(2)">
+                <img src="../assets/katakana-icon.png" />
+                <div class="card-subtitle">Katakana</div>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-align-items-center">
+            <ion-col size="6">
+              <ion-card button (click)="gotoPage(3)">
+                <img src="../assets/st-icon.png" />
+                <div class="card-subtitle">Lesson 1</div>
+              </ion-card>
+            </ion-col>
+            <ion-col size="6">
+              <ion-card button (click)="gotoPage(4)">
+                <img src="../assets/nd-icon.png" />
+                <div class="card-subtitle">Lesson 2</div>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </center>
+      <div class="Kirby">
+        <div (click)="alertInfo()">
+          <img src="../../assets/AS001556_08.gif" />
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div id="faq">
+        <ul>
+          <li>
+            <input type="checkbox" checked />
+            <i></i>
+            <h2>ชื่อประเทศ</h2>
+            <p>
+              <img src="../../assets/DidyouK/9469_ext_20_th_0.png" />
+              <br />&nbsp; &nbsp;ในภาษาญี่ปุ่น
+              ชื่อประเทศญี่ปุ่นจะอ่านออกเสียงว่า <br />"นิฮอน" หรือ "นิปปอน"
+              โดยปกติเมื่อพูดถึงเมืองหลวงจะหมายถึง โตเกียว
+              (แต่ไม่มีการกำหนดตามกฎหมายแต่อย่างใด)
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked />
+            <i></i>
+            <h2>ธงชาติ</h2>
+            <p>
+              <img
+                style="margin-left: 8%"
+                width="95%"
+                src="../../assets/DidyouK/1024px-Flag_of_Japan.svg.webp"
+              />
+              &nbsp; &nbsp;<br />ตามกฎหมายระบุให้เรียกธงชาติว่า <br />"นิชโชคิ"
+              แต่ปัจจุบันจะเรียกว่า "ฮิโนะมารุ" กันอย่างแพร่หลาย
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked />
+            <i></i>
+            <h2>ดอกไม้กับนกประจำชาติ</h2>
+            <p>
+              <img style="margin-left: 8%" src="../../assets/DidyouK/FB.jpg" />
+              &nbsp; &nbsp;ไม่มีกำหนดตามกฎหมาย แต่
+              "ดอกซากุระและดอกเบญจมาศ"ถูกจัดให้เป็นดอกไม้ประจำชาติ
+              และนกประจำชาติเป็น "ไก่ฟ้าญี่ปุ่น"
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked />
+            <i></i>
+            <h2>ซูโม่</h2>
+            <p>
+              <img
+                style="margin-left: 20%"
+                style="margin-top: 8%"
+                src="../../assets/DidyouK/5c6f6f7ce0fb3_5c6f6ec3d800f_1556315264.jpg"
+              />
+              &nbsp; &nbsp;ซูโม่ (相撲)
+              เป็นทั้งศิลปะการต่อสู้และพิธีกรรมที่ทำขึ้นเพื่อถวายแก่เทพ
+              โดยนักซูโม่ที่สวมผ้าเตี่ยวมาวาชิจะเข้าไปในสังเวียนซึ่งล้อมด้วยแนวรูปวงกลมที่เพื่อต่อสู้ประลองฝีมือกัน
+              ซึ่งฝ่ายที่สามารถผลักคู่ต่อสู้ออกสังเวียนหรือทำให้ส่วนหนึ่งของร่างกายของฝ่ายตรงข้าม
+              (ไม่นับฝ่าเท้า) แตะพื้นได้ก่อนจะเป็นผู้ชนะ
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked />
+            <i></i>
+
+            <h2>มีเรื่องดี ต้องกินข้าวแดง</h2>
+            <p>
+              <img
+                style="margin-left: 8%"
+                src="../../assets/DidyouK/1500_sekihanoridume.jpg"
+              />
+              &nbsp;
+              &nbsp;คนญี่ปุ่นนิยมหุงข้าวเซกิซังหรือข้าวแดงทานเพื่อความโชคดี
+              ดังนั้นจะหุงข้าวแดงกินกันเพื่อเฉลิมฉลองโอกาสพิเศษต่างๆ
+              เช่นวันปีใหม่ วันเกิด งานแต่งงาน วันจบการศึกษา ฯลฯ
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked />
+            <i></i>
+            <h2>ตุ๊กตาไล่ฝน</h2>
+            <p>
+              <img
+                style="margin-left: 6%"
+                src="../../assets/DidyouK/MSeYDuTHSb8FbAG2z28fVpj0xKndNV3Kiy5pIlnY2GcQ2I3FU8gPQqE6fIlaFREz.png"
+              />
+              &nbsp; &nbsp;ตุ๊กตาไล่ฝน หรือ เทรุเทรุโบซุ (てるてる坊主)
+              <br />เป็นตุ๊กตาที่จะทำขึ้นมาเวลาที่ต้องการขอให้อากาศในวันรุ่งขึ้นแจ่มใส
+              โดยคำว่า เทรุเทรุโบซุ มีความหมายมาจากคำว่า เทรุ (照る) ที่แปลว่า
+              ส่องแสง และคำว่า โบซุ (坊主) แปลว่า พระสงฆ์ หรือ หัวโล้น
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked />
+            <i></i>
+            <h2>โมจิ</h2>
+            <p>
+              <img
+                style="margin-left: 12%"
+                width="80%"
+                src="../../assets/DidyouK/mochi01.jpg"
+              />
+              &nbsp;
+              &nbsp;ชาวญี่ปุ่นเชื่อกันว่าโมจิเป็นขนมมงคลจะใช้ในการประกอบพิธีกรรมทางศาสนาและประเพณีสำคัญๆของญี่ปุ่นเท่านั้น
+              จนถึงช่วงปลายศตวรรษที่ 18
+              “โมจิ”เริ่มเป็นที่นิยมของชาวญี่ปุ่นมากขึ้นเนื่องจากสามารถทำรับประทานเองที่บ้านได้
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked />
+            <i></i>
+            <h2>ไอคิโด</h2>
+            <p>
+              <img
+                style="margin-left: 5%"
+                src="../../assets/DidyouK/image.png"
+              />
+              &nbsp; &nbsp;ไอคิโด (合気道 ) เป็นศิลปะการต่อสู้ของญี่ปุ่นสมัยใหม่
+              เน้นการป้องกันตนเองมากกว่าการต่อสู้ ไอคิโดก่อตั้งโดย อาจารย์โมริเฮ
+              อุเอชิบะ (植芝 盛平 )
+              <br />ในช่วงปี 1920 โดยนำศิลปะการต่อสู้ดั้งเดิมของญี่ปุ่น เช่น
+              ไดโตริว ไอคิ-ยิวยิตสู (ไอคิ-จูจุทสึ)
+              ที่เคยร่ำเรียนมาผสมผสานและประยุกต์กลายเป็นไอคิโด
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked />
+            <i></i>
+            <h2>ทรงผมชนมาเกะของคนญี่ปุ่น</h2>
+            <p>
+              <img
+                style="margin-left: 8%"
+                src="../../assets/DidyouK/otv77340xVno1uBTnGG-o.jpg"
+              />
+              &nbsp; &nbsp;“ชนมาเกะ (丁髷)” คือ
+              ทรงผมสมัยโบราณของชาวญี่ปุ่นซึ่งมักจะมีความเกี่ยวข้องกับซามูไรและยุคเอโดะ
+              ลักษณะของผมทรงนี้จะมีบริเวณที่ถูกโกนออกไปและผมที่เหลืออยู่จะถูกมัดรวบแบบทรงดังโงะ
+              ว่ากันว่าเป็นอีกวิธีในการซ่อนปัญหาศีรษะล้าน
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked />
+            <i></i>
+            <h2>เทศกาลปาถั่ว</h2>
+            <p>
+              <img
+                style="margin-left: 8%"
+                width="100%"
+                src="../../assets/DidyouK//download.png"
+              />
+              &nbsp; &nbsp;ตามความเชื่อของคนญี่ปุ่น
+              เมื่อถึงช่วงการเปลี่ยนฤดูกาลจะมียักษ์หรือภูติผีปีศาจ (鬼)
+              ซึ่งเป็นตัวแทนของสิ่งชั่วร้ายปรากฏตัวขึ้น
+              ชาวบ้านจึงนำถั่วเหลืองมาไล่ปายักษ์เพื่อขับไล่สิ่งชั่วร้ายดังกล่าว
+              <br />พร้อมกับตะโกนว่า 鬼は外! 福は内! <br />แปลว่า “ยักษ์จงออกไป
+              ความโชคดีจงเข้ามา”
+            </p>
+          </li>
+          <li>
+            <input type="checkbox" checked />
+            <i></i>
+            <h2>งานเทศกาลคานามาระ</h2>
+            <p>
+              <img style="margin-left: 6%" src="../../assets/DidyouK/P4.webp" />
+              &nbsp; &nbsp;งานเทศกาลคานามาระ(かなまら祭り)
+              ที่จัดขึ้นทุกเดือนเมษายนภายใน เมืองคาวาซากิ
+              เป็นหนึ่งในงานเทศกาลประจำฤดูใบไม้ผลิของญี่ปุ่นที่จัดขึ้นเพื่อขอพรเรื่อง
+              มีบุตร ความปรองดองของสามีภรรยา <br />และการค้าเจริญรุ่งเรือง
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
+
+

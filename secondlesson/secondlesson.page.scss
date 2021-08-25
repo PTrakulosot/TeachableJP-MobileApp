@@ -1,0 +1,44 @@
+ion-content {
+  // --background: #0990ff88;
+}
+
+ion-item {
+  box-shadow: 0 0 3px 0 var(--ion-color-medium);
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 400px;
+}
+
+ion-label {
+  margin-top: 5px;
+}
+
+.wrapper {
+  display: inline-flex;
+  width: 400px;
+}
+
+.JP {
+  font-size: 14px;
+}
+
+.RO {
+  font-size: 14px;
+}
+
+.TH {
+  font-size: 14px;
+}
+* {
+  font-family: "Itim", cursive;
+  font-family: "Sriracha", cursive;
+}
+.toolbar {
+  background: -webkit-linear-gradient(left, #d6eff5, #5298ad, #d6eff5);
+}
+ion-content {
+    --background: url("/assets/232acff00e2d94f65b974570c03c03a9.jpg") no-repeat center 100%;
+  }
+  ion-title{
+    font-size: 25px;
+}

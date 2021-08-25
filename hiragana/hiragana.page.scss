@@ -1,0 +1,25 @@
+.img-wrapeer {
+    min-height: 100px;
+    width: 90%;
+}
+.toolbar{
+    background: -webkit-linear-gradient(left,#f7e8f4, #dc93e7,#f7e8f4);
+
+}
+ion-content {
+    --background: url("/assets/BG/sakura_PNG37.png") no-repeat center 100%;
+  }
+  * {
+    font-family: "Itim", cursive;
+    font-family: "Sriracha", cursive;
+  }
+  
+  .card{
+      border: 2px solid #d5ffe2;
+      border-radius: 10px;
+      box-shadow: 2px 2.2px 2px #888888;
+      background-color: rgb(255, 254, 250);
+  }
+  ion-title{
+      font-size: 25px;
+  }
